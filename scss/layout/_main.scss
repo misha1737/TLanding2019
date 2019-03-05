@@ -1,0 +1,779 @@
+#index{
+	min-height: 100vh;
+	background-color: $blue;
+	#background{
+				background-image: url(images/FHDB.jpg) ;
+		background-size: cover;
+		background-position: 100% 100%;
+		#yolka img{
+			position: absolute;
+			height:50vh;
+			max-height: 400px;
+			top:0;
+			left:20%;
+		}
+	}
+		//background-color: $blue !important;
+		
+	.textAbout{
+		    position: absolute;
+    		bottom: 0;
+	}
+
+
+	@include text(16px);
+		.otstup{
+			height: 120px;
+		}
+		
+		h1{
+			@include text(50px, $blue);
+			text-align: left;
+			margin-left: 35px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			font-weight: 100;
+			text-transform: uppercase;
+			span{
+				font-weight: 900;
+			}
+		}
+		.depositMobile{
+			display:none;
+		}
+		.deposit{
+			padding-top: 80px;
+			min-height: 80vh;
+			//background-color: $lBlue ;
+			//background-image: url(images/polit.jpg) ;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: 101%;
+			img.persent{
+				width: 70%;
+				margin-left: 15%;
+			}
+			h3{
+				text-align: center;
+				@include text(24px, $blue);
+				margin-top: 20px;
+				margin-bottom:20px;
+			}
+			.depositBlock{
+				padding: 0 40px;
+				margin-top: 25px;
+				img{
+					float:left;
+					margin-right: 10px;
+				}
+				p{
+					@include text(18px);
+					    padding-left: 40px;
+				}
+			}
+			.protectBlock{
+				//margin-bottom: -100px;
+				    padding-top: 230px;
+				width: 60%;
+				margin-bottom: 40px;
+				margin-left: 20%;
+				img{
+					float:left;
+					margin-right: 20px;
+				}
+				p{
+					text-align: center;
+					@include text(18px);
+				}
+
+			}
+
+		}
+		.polit{
+		
+			position: relative;
+			min-height: 80vh;
+			//background-color: $lBlue;
+			//background-image: url(images/polit.jpg) ;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: 101%;
+			button{
+				position: absolute;
+				top: 140px;
+				padding:10px 50px;
+				@include text(26px);
+				background-color: #b1182e;
+				color:white;
+				border:none;
+				border-radius: 5px;
+				margin-left: 50%;
+    transform: translate(-50%);
+
+			}
+		}
+
+	
+
+			.forma{
+				#Zgoda{
+					width:auto;
+					margin-top: 0px;
+				}
+				h2{
+
+						@include text(24px, $blue);
+						text-align: center;
+
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			 margin-top: 20px;
+			font-weight: 100;
+			span{
+				font-weight: 900;
+			}
+				}
+				span.placeholder{
+					position: absolute;
+    				margin-top: 20px;
+
+				}
+				    padding-top: 80px;
+				min-height:80vh;
+				//background-color:$lBlue ;
+				//background-image: url(images/mobileB.jpg) ;
+				background-position: bottom;
+				background-repeat: no-repeat;
+				background-size: 101%;
+				form{
+				//	margin-top: 150px;
+					padding: 30px;
+					background-color: rgba(255, 255, 255, 0.5);
+					width:50%;
+					margin-left: 25%;
+	    			//transform: translate(-12%);
+	    			input{
+	    				width:100%;
+	    				margin-top: 25px;
+	    				background-color: rgba(255, 255, 255, 0.0);
+	    				border:none;
+	    				border-bottom: 3px solid #ddd;
+	    				outline:none;
+	    				text-align: center;
+	    			}
+	    			
+					button{
+					width:100%;
+					margin-top: 40px;
+					bottom:30px;
+					padding:10px 50px;
+					@include text(20px);
+					background-color: #f49fb0;
+					color:white;
+					border:none;
+					border-radius: 5px;
+			//		
+
+						}
+				}
+			}
+}
+label{
+cursor: pointer;
+}
+button{
+	outline: none;
+}
+ input[type="radio"] + label {
+  display: inline-block;
+  text-align: right;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+input[type="radio"] {
+  //visibility: hidden;
+}
+input[type="radio"] + label:after {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: url('images/02.png');
+  background-size: 101%;
+}
+
+input[type="radio"]:checked + label:after {
+  background-position: 0 -21px;
+}
+.butCont{
+	position: relative;
+}
+button span{
+    float: left;
+	margin-top: 5px;
+    margin-left: 5px;
+}
+button img{
+	float: left;
+}
+form button img{
+	margin-left:25%;
+}
+form button span{
+	margin-top: 10px;
+}
+.tas2uB{
+	 @include text(16px);
+    width: 100%;
+    margin-top: 40px;
+    background-color: $red;
+        color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+body#thanku{
+	text-align: center;
+	background:$lBlue;
+	img{
+		display:inline-block;
+		max-height: 100vh;
+
+	}
+	overflow: hidden;
+
+
+
+}
+.panel{
+margin:0 !important;
+overflow:hidden;
+}
+
+ @media only screen and (max-width : 1600px){
+	#index {
+		
+		
+		.deposit{
+			h1{
+				
+			}
+			h3{
+				margin-top: 4vh;
+				margin-bottom: 0px;
+			}
+			.depositBlock{
+				margin-top: 20px;
+				p{
+					font-size: 15px;
+				}
+			}
+
+			img.persent{
+				width: 60%;
+				margin-left: 20%;
+			}
+			.protectBlock{
+				min-height: 100vh;
+				margin-bottom: 0px;
+			}
+
+		}
+			.deposit{
+			min-height:70vh;
+		}
+			.forma{
+				min-height:70vh;
+			}
+		footer{
+			height:auto;
+			//margin-top: -20px;
+		}
+		
+		}
+	
+ }
+
+ @media only screen and (max-width : 1400px){
+	#index {
+		#background{
+				background-image: url(images/pcB.jpg) ;
+		background-size: cover;
+		background-position: 100% 100%;
+	}
+	#yolka img{
+			position: absolute;
+			height:50vh;
+			max-height: 400px;
+			top:0;
+			left:20%;
+		}
+
+	}
+	
+
+
+ }
+
+
+ @media only screen and (max-width : 1200px){
+	#index{
+			#background{
+			background-position: 100% 100%;
+		#yolka img{
+			position: absolute;
+			height:40vh;
+			max-height: 200px;
+			top:0;
+			//left:20%;
+		}
+		}
+
+		 .forma form{
+		position:static;
+		    width: 64%;
+		    margin-left: 18% !important;
+
+	}
+		
+		.otstup{
+			height: 0px;
+		}
+		.deposit{
+			
+		 .textAbout h1{
+			font-size: 20px;
+		}
+		 	.depositBlock{
+			padding:10px;
+		}
+	}
+		.deposit .protectBlock{
+			width:100%;
+			margin-left: 0;
+		}
+	}
+	#index .polit{
+		button{
+			//top: 550px;
+			//    margin-left: 10%;
+    	//		transform: translate(5%);
+		}
+	}
+	form button img{
+	margin-left:15%;
+		}
+ } 
+ @media only screen and (max-width : 1000px){
+	#index{
+
+
+		
+	// 	.deposit {
+			
+	// 		.protectBlock{
+	// 		width:100%;
+	// 		margin-left: 0;
+	// 		    padding-top: 70px;
+	// 	}}
+
+	// 	h1{
+	// 		padding-top: 40px;
+	// 		font-size: 30px;
+	// 	}
+	// 	.forma{
+	// 		    margin-top: -40px;
+	// 	}
+	// #dzvinok{
+	// 	form{
+	// 		margin-top: 0;
+	// 		position: absolute;
+	// 		top:200px;
+	// 	}
+	// }
+	// 	.polit{
+	// 		    margin-top: -40px;
+				
+	// 		button{
+	// 			width:80%;
+	// 			//margin-left: -5%;
+	// 			   margin-left: 10%;
+ //    		transform: translate(5%);
+	// 			transform: none;
+				
+	// 		}
+	// 	}
+	// 	.deposit{
+	// 		min-height:110vh;
+	// 	}
+	// 		.forma{
+	// 			min-height:110vh;
+	// 		}
+	// 	footer{
+	// 		min-height:30vh;
+	// 		margin-top: -20px;
+	// 	}
+
+	 }
+
+ }
+ @media only screen and (max-width : 767px){
+#index {
+	 
+		#background{
+				background-image: url(images/mobileB.jpg) ;
+		background-size: cover;
+		background-position: bottom center;
+		#yolka img{
+			position: absolute;
+			height:40vh;
+			max-height: 100px;
+			top:0;
+			left:5%;
+		}
+	}
+
+	
+	.forma{
+				h2{
+					font-size: 30px;
+				}}
+	 .depositMobile{
+			display:block;
+			padding-top: 10px;
+		}
+
+		.deposit.about {
+			display:none;
+			//position: absolute;
+			top:0;
+			    padding-top: 120px;
+			
+
+		}
+		.deposit h3{
+			@include text(20px, $blue);
+			margin-top: 5px;
+		}
+	.deposit {
+		background-image: none ;
+		min-height:20vh;
+		.depositBlock{
+			margin-top: 5px;
+		}
+		.protectBlock{
+			padding-top: 20px;
+		}
+		//padding-top: 240px;
+		}
+	 .forma form{
+		position:static;
+		    width: 80%;
+		    margin-left: 10% !important;
+
+	}
+
+	.perevagi{
+	//padding-top: 240px;
+	} 
+	.umovi{
+	//padding-top: 240px;
+	}
+	.calk{
+	//padding-top: 240px;
+	}
+.polit button {
+	top: 40px;
+}
+
+		.calk{
+		padding:120px;
+	}
+	
+
+		.polit{
+			button{
+				top:90px;
+			}
+		
+	}
+	footer{
+		height:auto !important;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	div.forma{
+		min-height: 100vh !important;
+
+	}
+	.depositMobile   h1{
+		font-size: 30px;
+		padding-top: 0px;
+	}
+	}
+
+ }
+ @media only screen and (max-width : 500px){
+	#index{
+		h1{
+			margin-left: 0px;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 90px;
+		}
+		.depositMobile h1{
+			font-size: 20px;
+		}
+		.forma h2{
+			font-size: 20px;
+		}
+		.deposit{
+		text-align: center;
+	//	min-height: 790px !important;
+		.depositBlock{
+
+		}
+			img{
+				display:none;
+			}
+			p{
+				padding:0 !important;
+			}
+		}
+		.polit{
+			    margin-top: -40px;
+			min-height: 400px;
+			button{
+				top:180px;
+				width:90%;
+			margin-left: 0;
+			font-size: 20px;
+			img{
+				display:none;
+			}
+			//	transform: none;
+			}
+		}
+		.calk{
+			padding-left: 5px;
+			text-align: center;
+		}
+		.perevagi .vkladBlock{
+			    margin-left: 25%;
+    transform: translate(-30%);
+   			 p {
+				top:6px;
+    		}
+
+		
+    }
+	.umovi{
+		.vkladBlock{
+			    margin-left: 10%;
+    transform: translate(-10%);
+   			 p {
+				top:6px;
+    		}
+    	}
+	}
+	.form_1_block{
+		    width: 90%;
+   			margin-left: 5%;
+   			#decision_percent{
+   				font-size: 35px;
+   			}
+	}
+	 #dzvinok{
+	min-height: 480px;
+	  form{
+		top:145px;
+	}
+	}
+
+	.forma form{
+	    margin-left: 20%;
+	
+	 p{
+	    	font-size:12px;
+	    }
+	    input{
+	    //	font-size:12px;
+	    }
+	   span.placeholder{
+			margin-top: 0;
+	    }
+	}
+	    .forma form button{
+
+	 font-size:12px;
+	}
+	
+	.forma button img{ display:none}
+	
+	.perevagi{
+		padding-top: 110px;
+	}
+	.umovi{
+	padding-top: 110px;	
+	}
+	.calk{
+		padding-top: 110px;	
+		h2{
+			margin-bottom:0;
+		}
+		.grivnya, .dolar, .euro{
+			margin-top :0px;
+			margin-right: 0px;
+		}
+	}
+	.ui-slider-block{
+			margin-top: 25px;
+	}
+
+	}
+ }
+ @media only screen and (max-height : 769px){
+ 	
+ 		#index {
+			
+		.forma h2{
+			margin-top:0;
+		}
+ 		.forma form{
+			margin-top: 20px;
+ 		}
+			.deposit{
+				//padding-top: 50px;
+				h1{
+				font-size: 20px;
+				margin-top: 0px;
+				}
+				
+				h3{
+					font-size: 16px;
+				}
+				.depositBlock{
+					padding:0;
+					margin-top:10px;
+					p{
+						font-size: 13px;
+						span{
+							font-size: 8px;
+						}
+					}
+				}
+				.protectBlock{
+					padding-top: 100px;
+					p{
+						font-size: 12px;
+						span{
+							font-size: 8px;
+						}
+					}	 
+				}
+
+			}
+
+			.perevagi{
+				min-height: 400px;
+				.vkladBlock img{
+					width:40px;
+					height:40px;
+				}
+				.perevagiTitle{
+				//	padding-top: 10px;
+				}
+				
+				.vkladBlock{
+					margin-top: 2vh;
+				}
+			}
+			.umovi{
+			.umoviTitle{
+				margin-top: 40px;
+			}
+			.umoviBlock{
+				margin-bottom: 2vh;
+			}
+			.vkladBlock img{
+					width:40px;
+					height:40px;
+				}
+				
+				.vkladBlock{
+					margin-top: 2vh;
+				}
+			}
+		footer{
+			height:30vh;
+				.leftFooter, .centerFooter, .rightFooter{
+					margin-top: 30px;
+				}
+
+ 			}
+				
+	}
+
+ 		
+
+	
+}
+ @media only screen and (max-height : 850px){
+	#index	.deposit{
+				//padding-top: 50px;
+				h1{
+				font-size: 38px;
+				margin-top: 0px;
+				}
+			}
+
+
+ }
+
+
+
+  @media only screen and (max-height : 700px){
+
+	#index{
+		footer{
+			height:30vh;
+				.leftFooter, .centerFooter, .rightFooter{
+					margin-top: 15px;
+				}
+
+ 			}
+	
+	.forma form{
+		    padding: 15px;
+	}
+	.deposit{
+			
+			//background-image: url(images/polit.jpg) ;
+		}
+
+	}
+
+  }	
+
+  @media only screen and (max-height : 650px ) and (max-width : 769px ){
+
+  	.panel{
+	overflow:scroll;
+	}
+	#index{
+		#background{
+		min-height: 150vh;
+	}
+		 .polit{
+			
+	
+			//background-image: url(images/politmobile.jpg) ;
+			background-color: #e9f1f9;
+			}
+	}	
+  }
